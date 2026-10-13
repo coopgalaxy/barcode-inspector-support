@@ -2,32 +2,256 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Barcode Inspector Support</title>
-  <style>
-    body { max-width: 760px; margin: 48px auto; padding: 0 20px;
-           font: 17px/1.6 -apple-system, BlinkMacSystemFont, sans-serif;
-           color: #172126; }
-    h1, h2 { line-height: 1.2; }
-    a { color: #087990; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Barcode Inspector turns USPS Intelligent Mail barcodes into structured, portable data you can copy, email, AirDrop, text, or use on your computer.">
+  <meta name="theme-color" content="#092638">
+  <meta property="og:title" content="Barcode Inspector — From mailpiece to desktop">
+  <meta property="og:description" content="Scan, decode, and transfer USPS Intelligent Mail barcode data from your iPhone to the computer where you need it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://coopgalaxy.github.io/barcode-inspector-support/">
+  <title>Barcode Inspector — Scan, Decode, Transfer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Barcode Inspector Support</h1>
-  <p>Barcode Inspector scans common barcode formats and provides detailed
-     inspection of USPS Intelligent Mail barcodes.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <h2>Contact</h2>
-  <p>For help, questions, or feedback, email
-     <a href="mailto:barcodeinspector@gmail.com">barcodeinspector@gmail.com</a>.
-  </p>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-current="page">
+        <span class="brand-mark" aria-hidden="true">|||</span>
+        <span>Barcode Inspector</span>
+      </a>
+      <div class="nav-links">
+        <a href="quick-start.html">Quick Start</a>
+        <a href="imb-guide.html">IMb Guide</a>
+        <a href="sharing.html">Export Data</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>Common questions</h2>
-  <p><strong>Camera not scanning?</strong> Allow camera access in
-     Settings → Privacy &amp; Security → Camera.</p>
-  <p><strong>Premium purchase missing?</strong> Open IMb Premium inside the
-     app and tap Restore Purchases.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Professional barcode inspection for iPhone</p>
+          <h1>From mailpiece to desktop.</h1>
+          <p class="hero-copy">
+            Barcode Inspector does more than read a barcode. It turns USPS
+            Intelligent Mail barcodes into <strong>structured, portable data</strong>
+            you can copy, email, AirDrop, text, or use on your computer.
+          </p>
+          <div class="button-row">
+            <a class="button" href="https://apps.apple.com/app/id6816393556">View on the App Store</a>
+            <a class="button secondary" href="quick-start.html">Learn the workflow</a>
+          </div>
+        </div>
 
-  <p><a href="privacy.html">Privacy Policy</a></p>
+        <div class="report-card" aria-label="Example Barcode Inspector result">
+          <div class="report-screen">
+            <div class="report-top">
+              <strong>Barcode Details</strong>
+              <span class="status-pill">DECODED</span>
+            </div>
+            <div class="report-label">COMPLETE BARCODE</div>
+            <div class="report-line"><span>Format</span><span>USPS IMb</span></div>
+            <div class="report-line"><span>Complete Value</span><span>00…1234</span></div>
+            <div class="report-label">USPS TRACKING DATA</div>
+            <div class="report-line"><span>Barcode ID</span><span>00</span></div>
+            <div class="report-line"><span>Service Type ID</span><span>300</span></div>
+            <div class="report-line"><span>Mailer ID</span><span>123456</span></div>
+            <div class="report-line"><span>Serial Number</span><span>789012345</span></div>
+            <div class="report-label">ROUTING DATA</div>
+            <div class="report-line"><span>Destination ZIP</span><span>77550</span></div>
+            <div class="share-chip">SHARE RESULTS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Product highlights">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <strong>Capture</strong>
+          <span>Live camera or saved photo</span>
+        </div>
+        <div class="trust-item">
+          <strong>Understand</strong>
+          <span>Clearly labeled IMb fields</span>
+        </div>
+        <div class="trust-item">
+          <strong>Transfer</strong>
+          <span>Clean text report for desktop use</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <p class="eyebrow">The complete handoff</p>
+        <h2>Scan it. Understand it. Send the data where it belongs.</h2>
+        <p class="section-intro">
+          A decoded barcode is only useful when you can do something with it.
+          Barcode Inspector closes the gap between a physical mailpiece and the
+          desktop systems, messages, reports, and people that need its data.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3>Scan on the iPhone</h3>
+            <p>Use the live camera or import an image from Photos. A dedicated scanner handles the distinctive 65-bar USPS IMb.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3>Inspect real fields</h3>
+            <p>Read the tracking code, Barcode ID, Service Type ID, Mailer ID, serial number, routing information, and physical barcode data.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3>Move the result</h3>
+            <p>Copy a single value, copy the full inspection, or send a readable text report through Mail, AirDrop, Messages, or a compatible chat app.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Built for actual work</p>
+        <h2>Not another mystery-number scanner.</h2>
+        <p class="section-intro">
+          Barcode Inspector is designed for people who need to understand,
+          document, troubleshoot, and reuse barcode data—not merely see that a
+          scan succeeded.
+        </p>
+
+        <div class="grid-2">
+          <article class="card">
+            <div class="feature-icon" aria-hidden="true">IMb</div>
+            <h3>Detailed Intelligent Mail inspection</h3>
+            <p>Translate the printed 65-bar pattern into its complete numeric value and organized USPS tracking and routing fields.</p>
+          </article>
+          <article class="card">
+            <div class="feature-icon" aria-hidden="true">↗</div>
+            <h3>Portable results</h3>
+            <p>Export the inspection as a standard text file that opens cleanly on a Mac, Windows PC, phone, tablet, or any system that reads plain text.</p>
+          </article>
+          <article class="card">
+            <div class="feature-icon" aria-hidden="true">⌘</div>
+            <h3>Copy at the level you need</h3>
+            <p>Copy one field for data entry or copy the complete inspection for documentation and technical support.</p>
+          </article>
+          <article class="card">
+            <div class="feature-icon" aria-hidden="true">▣</div>
+            <h3>Common barcode support</h3>
+            <p>Use the standard scanner for QR, UPC, EAN, Code 128, Data Matrix, PDF417, and other common formats.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section navy">
+      <div class="container">
+        <p class="eyebrow">Who it helps</p>
+        <h2>A focused tool for mail and data professionals.</h2>
+        <p class="section-intro">
+          Useful anywhere a physical barcode must become readable, transferable
+          information without retyping a long identifier.
+        </p>
+        <div class="grid-4">
+          <article>
+            <h3>Mail operations</h3>
+            <p>Inspect a mailpiece at the point where the question occurs.</p>
+          </article>
+          <article>
+            <h3>Print and mailing</h3>
+            <p>Verify which identifiers and routing data reached the finished piece.</p>
+          </article>
+          <article>
+            <h3>Technical support</h3>
+            <p>Send exact decoded fields instead of photos or manually typed values.</p>
+          </article>
+          <article>
+            <h3>Developers and QA</h3>
+            <p>Move barcode values into logs, tickets, test cases, and production systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <p class="eyebrow">Training and support</p>
+        <h2>Get productive quickly.</h2>
+        <p class="section-intro">Start with the workflow you need, then go deeper into how Intelligent Mail data is organized.</p>
+
+        <div class="grid-3">
+          <a class="card link-card" href="quick-start.html">
+            <h3>Quick Start</h3>
+            <p>Camera permissions, standard scanning, the dedicated IMb scanner, and photo import.</p>
+            <span class="arrow">Start scanning →</span>
+          </a>
+          <a class="card link-card" href="sharing.html">
+            <h3>Move data to a computer</h3>
+            <p>Use email, AirDrop, Messages, chat, or Universal Clipboard to get the result where you work.</p>
+            <span class="arrow">See transfer options →</span>
+          </a>
+          <a class="card link-card" href="imb-guide.html">
+            <h3>Understand IMb fields</h3>
+            <p>Learn what the 65 bars encode and what each tracking and routing field represents.</p>
+            <span class="arrow">Read the field guide →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel">
+          <p class="eyebrow">Straightforward access</p>
+          <h2>Standard scanning is free. IMb starts free.</h2>
+          <p>
+            Use the standard barcode reader without charge. Intelligent Mail
+            inspection includes three successful scans per day. Unlock unlimited
+            IMb scanning with one permanent in-app purchase—no subscription and
+            no account required.
+          </p>
+          <div class="button-row">
+            <a class="button" href="premium.html">IMb Premium details</a>
+            <a class="button secondary" href="faq.html" style="color: white; border-color: #8db3bf;">Get support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Barcode Inspector</h3>
+        <p>Scan, decode, and transfer barcode data from your iPhone.</p>
+        <p class="small-print">Barcode Inspector is an independent application and is not affiliated with or endorsed by the United States Postal Service.</p>
+      </div>
+      <div>
+        <h3>Learn</h3>
+        <div class="footer-links">
+          <a href="quick-start.html">Quick Start</a>
+          <a href="imb-guide.html">IMb Guide</a>
+          <a href="sharing.html">Export Data</a>
+          <a href="premium.html">Premium</a>
+        </div>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <div class="footer-links">
+          <a href="faq.html">FAQ</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="mailto:barcodeinspector@gmail.com">Email Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

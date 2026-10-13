@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical guide to the USPS Intelligent Mail barcode fields displayed by Barcode Inspector.">
+  <meta name="theme-color" content="#092638">
+  <title>USPS Intelligent Mail Barcode Guide — Barcode Inspector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">|||</span><span>Barcode Inspector</span></a>
+      <div class="nav-links">
+        <a href="quick-start.html">Quick Start</a>
+        <a href="imb-guide.html" aria-current="page">IMb Guide</a>
+        <a href="sharing.html">Export Data</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Field guide</p>
+        <h1>Understand what the 65 bars actually encode.</h1>
+        <p>Barcode Inspector translates the four-state USPS Intelligent Mail pattern into its numeric value, tracking fields, routing fields, and physical barcode information.</p>
+      </div>
+    </section>
+
+    <div class="content">
+      <h2>What is an Intelligent Mail barcode?</h2>
+      <p>The USPS Intelligent Mail barcode, commonly called an <strong>IMb</strong>, is a 65-bar postal barcode used on letters, cards, and flats. USPS uses it to support automated mail sorting, identification, routing, and participating mail services.</p>
+      <p>Each bar has one of four possible states:</p>
+      <table class="data-table">
+        <thead><tr><th>Code</th><th>Bar state</th><th>Appearance</th></tr></thead>
+        <tbody>
+          <tr><td>F</td><td>Full</td><td>Extends above and below the center tracker region</td></tr>
+          <tr><td>A</td><td>Ascender</td><td>Extends above the tracker region</td></tr>
+          <tr><td>D</td><td>Descender</td><td>Extends below the tracker region</td></tr>
+          <tr><td>T</td><td>Tracker</td><td>Occupies only the center region</td></tr>
+        </tbody>
+      </table>
+      <p>The 65 bars encode a 20-digit tracking code plus an optional routing code. The complete decoded value can contain up to 31 digits.</p>
+
+      <h2>The tracking portion</h2>
+      <p>The tracking portion always contains 20 digits. Barcode Inspector separates it into the fields below.</p>
+      <table class="data-table">
+        <thead><tr><th>Field</th><th>Length</th><th>What it represents</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Barcode ID</strong></td><td>2 digits</td><td>Identifies barcode processing information, including optional endorsement-line information where applicable.</td></tr>
+          <tr><td><strong>Service Type ID</strong></td><td>3 digits</td><td>Identifies the mail class and requested services, such as address correction or other electronic service options.</td></tr>
+          <tr><td><strong>Mailer ID</strong></td><td>6 or 9 digits</td><td>Identifies the mail owner or mailing agent associated with the barcode.</td></tr>
+          <tr><td><strong>Serial Number</strong></td><td>9 or 6 digits</td><td>Provides the mailpiece-specific portion. Its length complements the Mailer ID so the two fields total 15 digits.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The routing portion</h2>
+      <p>An IMb may contain no routing digits or may include 5, 9, or 11 routing digits.</p>
+      <table class="data-table">
+        <thead><tr><th>Length</th><th>Routing information</th></tr></thead>
+        <tbody>
+          <tr><td>0 digits</td><td>No destination routing code is encoded.</td></tr>
+          <tr><td>5 digits</td><td>Destination ZIP Code.</td></tr>
+          <tr><td>9 digits</td><td>Destination ZIP+4 Code.</td></tr>
+          <tr><td>11 digits</td><td>Destination ZIP+4 Code plus the two-digit delivery point.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What Barcode Inspector reports</h2>
+      <ul>
+        <li><strong>Complete Barcode:</strong> the full decoded numeric value.</li>
+        <li><strong>USPS Tracking Data:</strong> the 20-digit tracking portion and its component fields.</li>
+        <li><strong>Routing Data:</strong> the optional destination routing portion and its interpretation.</li>
+        <li><strong>Physical Barcode:</strong> the detected four-state bar representation and scan information.</li>
+        <li><strong>Additional Data:</strong> other interpretations available for the decoded result.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Tracking code is not the same as tracking history.</strong> The IMb contains identifiers and requested-service information. Barcode Inspector decodes what is printed in the barcode; it does not retrieve USPS mailpiece scan events or delivery history.
+      </div>
+
+      <h2>Why a scan may fail</h2>
+      <p>All 65 bars matter. A missing, merged, blurred, covered, or badly distorted bar can prevent a reliable decode. Try these corrections:</p>
+      <ul>
+        <li>Flatten the mailpiece and keep the barcode away from glare.</li>
+        <li>Make sure both ends of the barcode are visible.</li>
+        <li>Move the camera slightly farther away to improve focus.</li>
+        <li>Use even lighting or enable the flashlight.</li>
+        <li>Try scanning a sharp photo if the live camera struggles.</li>
+      </ul>
+
+      <h2>Official USPS references</h2>
+      <ul>
+        <li><a href="https://postalpro.usps.com/mailing/intelligent-mail-barcode/">USPS Intelligent Mail Barcode overview and resources</a></li>
+        <li><a href="https://postalpro.usps.com/ppro-tools/encoder-decoder">USPS IMb Decoder/Encoder</a></li>
+        <li><a href="https://postalpro.usps.com/mailing/service-type-identifiers">USPS Service Type Identifier resources</a></li>
+      </ul>
+      <p class="small-print">USPS, Intelligent Mail, and related marks belong to the United States Postal Service. Barcode Inspector is an independent application and is not affiliated with or endorsed by USPS.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Barcode Inspector</h3><p>Scan, decode, and transfer barcode data from your iPhone.</p><p class="small-print">Not affiliated with or endorsed by the United States Postal Service.</p></div>
+      <div><h3>Learn</h3><div class="footer-links"><a href="index.html">Home</a><a href="quick-start.html">Quick Start</a><a href="sharing.html">Export Data</a><a href="premium.html">Premium</a></div></div>
+      <div><h3>Support</h3><div class="footer-links"><a href="faq.html">FAQ</a><a href="privacy.html">Privacy Policy</a><a href="mailto:barcodeinspector@gmail.com">Email Support</a></div></div>
+    </div>
+  </footer>
+</body>
+</html>

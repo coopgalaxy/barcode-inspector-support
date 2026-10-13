@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Move decoded barcode data from Barcode Inspector on iPhone to a Mac, Windows PC, email, text message, AirDrop, or compatible chat app.">
+  <meta name="theme-color" content="#092638">
+  <title>Export and Share Barcode Data — Barcode Inspector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">|||</span><span>Barcode Inspector</span></a>
+      <div class="nav-links">
+        <a href="quick-start.html">Quick Start</a>
+        <a href="imb-guide.html">IMb Guide</a>
+        <a href="sharing.html" aria-current="page">Export Data</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">From phone to workflow</p>
+        <h1>Move barcode data to the computer where you need it.</h1>
+        <p>Barcode Inspector creates a standard text report that is easy to email, AirDrop, message, archive, open, and copy into another system.</p>
+      </div>
+    </section>
+
+    <div class="content">
+      <h2>Create the report</h2>
+      <div class="steps">
+        <article class="step">
+          <h3>Scan and inspect</h3>
+          <p>Scan a standard barcode or USPS IMb and wait for the Barcode Details screen.</p>
+        </article>
+        <article class="step">
+          <h3>Tap Share Results</h3>
+          <p>Barcode Inspector creates <strong>barcode_inspector_results.txt</strong> containing the complete formatted inspection.</p>
+        </article>
+        <article class="step">
+          <h3>Choose the destination</h3>
+          <p>Select Mail, AirDrop, Messages, Files, or a compatible chat or collaboration app from the iOS share sheet.</p>
+        </article>
+      </div>
+
+      <h2>What the file contains</h2>
+      <p>The report is ordinary plain text—no proprietary software and no conversion required.</p>
+      <div class="code-sample">Category: USPS Intelligent Mail barcode
+Format: USPS IMb
+Description: USPS Intelligent Mail barcode inspection.
+
+COMPLETE BARCODE
+Complete Value: [decoded value]
+
+USPS TRACKING DATA
+Tracking Code: [20 digits]
+Barcode ID: [2 digits]
+Service Type ID: [3 digits]
+Mailer ID: [6 or 9 digits]
+Serial Number: [remaining digits]
+
+ROUTING DATA
+Routing Code: [0, 5, 9, or 11 digits]</div>
+      <p class="small-print">The exact fields depend on the barcode and the information encoded in it.</p>
+
+      <h2>Email it to any computer</h2>
+      <ol>
+        <li>Tap <strong>Share Results</strong>.</li>
+        <li>Select your email app.</li>
+        <li>Address the message to yourself or a coworker.</li>
+        <li>Open the attached text file on a Mac, Windows PC, phone, or tablet.</li>
+        <li>Copy the required values into your production system, ticket, report, or message.</li>
+      </ol>
+
+      <h2>AirDrop it to a Mac</h2>
+      <ol>
+        <li>Make sure AirDrop is enabled on the iPhone and Mac.</li>
+        <li>Tap <strong>Share Results</strong>, then choose <strong>AirDrop</strong>.</li>
+        <li>Select the Mac.</li>
+        <li>Open <strong>barcode_inspector_results.txt</strong> from Downloads.</li>
+      </ol>
+
+      <h2>Send it through text or chat</h2>
+      <p>Choose Messages or another compatible chat application from the iOS share sheet. The recipient receives the same readable text file. Availability depends on the applications installed on the phone and the receiving service's file rules.</p>
+
+      <h2>Paste directly from iPhone to Mac</h2>
+      <p>If the iPhone and Mac use the same Apple Account and Universal Clipboard is enabled:</p>
+      <ol>
+        <li>Tap <strong>Copy All Data</strong> on the iPhone.</li>
+        <li>Move to the Mac.</li>
+        <li>Press <strong>Command-V</strong> in the destination application.</li>
+      </ol>
+      <p>If the devices use different accounts or Universal Clipboard is unavailable, email or AirDrop the report instead.</p>
+
+      <h2>Copy only one value</h2>
+      <p>For quick data entry, use the copy control beside the exact field you need. This avoids selecting text manually and reduces transcription errors.</p>
+
+      <div class="callout">
+        <strong>Your choice controls the transfer.</strong> Barcode Inspector creates the report locally and opens the iOS share sheet. Nothing is sent until you choose an application or destination.
+      </div>
+
+      <h2>Troubleshooting</h2>
+      <h3>The receiving application shows an attachment</h3>
+      <p>That is expected. Open <strong>barcode_inspector_results.txt</strong> to view or copy the complete result.</p>
+      <h3>A chat message will not send</h3>
+      <p>Confirm that the recipient can receive attachments through that service. Try Mail, AirDrop, or Save to Files to verify the report independently.</p>
+      <h3>The share destination is missing</h3>
+      <p>Scroll to the end of the share sheet and tap <strong>More</strong>. iOS displays only compatible installed applications.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Barcode Inspector</h3><p>Scan, decode, and transfer barcode data from your iPhone.</p><p class="small-print">Not affiliated with or endorsed by the United States Postal Service.</p></div>
+      <div><h3>Learn</h3><div class="footer-links"><a href="index.html">Home</a><a href="quick-start.html">Quick Start</a><a href="imb-guide.html">IMb Guide</a><a href="premium.html">Premium</a></div></div>
+      <div><h3>Support</h3><div class="footer-links"><a href="faq.html">FAQ</a><a href="privacy.html">Privacy Policy</a><a href="mailto:barcodeinspector@gmail.com">Email Support</a></div></div>
+    </div>
+  </footer>
+</body>
+</html>
